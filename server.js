@@ -5,8 +5,6 @@ const path = require('path');
 
 const port = process.env.PORT || 3000;
 
-//process.env.PWD = process.cwd();
-
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
