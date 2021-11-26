@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>WTD - "what to do"</title>
+<link rel="stylesheet" href="WTD.css">
+
+<body>
+    <h1 class="title">WTD</h1>
+    
+    <div class="alltask">
+       <h2 class="tasklist-title">My To-Do Lists</h2>
+       <ul class="tasklist" id="lists">
+        <!--<li class="list-name active">Chores</li>
+        <li class="list-name">Grocery</li>
+        <li class="list-name">School</li>-->
+       </ul>
+
+       <form action="" id="list-form">
+        <input
+            id="list-input"
+            type="text"
+            class="new list"
+            placeholder="new list name"
+            aria-label="new list name"
+        />
+        <button 
+            class="listbutt" 
+            aria-label="create new list">+</button>
+    </form>
+ </div> 
+
+ <div class="wtdlist" id="tasks-list">
+    <div class="wtd-header">
+        <h2 class="list-title" id="list-name"></h2>
+            <p class="count" id="tasks-count"></p>
+    </div>
+    
+    <div class="wtd-body">
+        <div class="tasks" id="tasks">
+            <!--<div class="task"> 
+                <input 
+                    type="checkbox"
+                    id= "task1" 
+                />
+                <label for="task1">
+                    <span class="custom-checkbox"></span>
+                        take out trash
+                </label>
+            </div> -->
+                <!--closed task1--->
+                <!--<div class="task">
+                    <input type="checkbox"
+                    id= "task2" />
+                    <label for="task2">
+                        wash the dishes
+                    </label>
+                </div>-->
+                <!---closed task2-->
+                <!--<div class="task">
+                    <input type="checkbox"
+                    id= "task3" />
+                    <label for="task3">
+                        clean bedroom
+                    </label>
+                </div>-->
+                <!---closed task3-->
+        </div>  
+            
+            <div class="newer-tasks">
+                <form action="" id="task-form">
+                    <input 
+                        id="task-input"
+                        type="text"
+                        class="new task"
+                        placeholder="new task name"
+                        aria-label="new task name"
+                    />
+                    <button 
+                        class="taskbutt" 
+                        aria-label="create new list">+</button>
+                </form>
+            </div>
+
+            <div class="remove-tasks">
+                <button class="delete btn" id="delete-tasks-btn">Clear completed task</button>
+                <button id="delete-list-btn" class="delete btn">Delete list</button>
+            </div>
+        </div>
+    </div>
+
+    <template id="task-outline">
+        <div class="task"> 
+            <input 
+                type="checkbox"
+            />
+            <label>
+                <span class="custom-checkbox"></span>
+            </label>
+        </div>
+    </template>
+
+    <script src="backend.js"></script>
+</body>
+</html>
