@@ -3,6 +3,8 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
+app.use(express.static("."))
+
 app.get('/', function(req, res) {
     
     res.send("sdfsdf");
@@ -10,5 +12,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(port, () => {
-    console.log('listening at ${port}');
+    //console.log('listening at ${port}');
 });
