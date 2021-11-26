@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.get('/', function(req, res) {
     
     //res.render('public/frontend.html');
-    res.sendFile('public/frontend.html');
+    res.sendFile('./public/frontend.html');
 });
 
 app.listen(port, () => {
