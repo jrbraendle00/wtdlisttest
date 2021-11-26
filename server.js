@@ -11,10 +11,7 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     
-    //res.render('public/frontend.html');
     res.sendFile(path.join(__dirname+'/public/frontend.html'));
 });
 
-app.listen(port, () => {
-    //console.log('listening at ${port}');
-});
+app.listen(port);
