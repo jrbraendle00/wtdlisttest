@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.get('/frontend.html', function(req, res) {
+app.get('/', function(req, res) {
     
     res.send("sdfsdf");
 
