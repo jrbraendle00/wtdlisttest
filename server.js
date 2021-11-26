@@ -11,8 +11,8 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     
-    res.send("sdfsdf");
-
+    //res.render('public/frontend.html');
+    res.sendFile('public/frontend.html');
 });
 
 app.listen(port, () => {
