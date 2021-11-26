@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-//var path = require('path');
+const path = require('path');
 
 const port = process.env.PORT || 3000;
 
@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.get('/', function(req, res) {
     
     //res.render('public/frontend.html');
-    res.sendFile('frontend.html');
+    res.sendFile(path.join(__dirname+'/frontend.html'));
 });
 
 app.listen(port, () => {
