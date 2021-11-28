@@ -43,7 +43,7 @@ app.get('/', function(req, res) {
         res.send(result);
     });
     
-    //res.sendFile(path.join(__dirname+'/public/frontend.html'));
+    res.sendFile(path.join(__dirname+'/public/frontend.html'));
 });
 
 app.listen(port); 
