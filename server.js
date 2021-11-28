@@ -21,11 +21,11 @@ const path = require('path');
 
 const port = process.env.PORT || 3000;
 
-var sql = require('mysql');
 
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
+    var sql = require('mysql');
 
     var config = sql.createPool({
         host: 'us-cdbr-east-04.cleardb.com',
