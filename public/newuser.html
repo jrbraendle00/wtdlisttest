@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>WTD - "what to do"</title>
+<link rel="stylesheet" href="WTD.CSS">
+
+<body>
+    <h1 class="title">WTD - NEW USER</h1>
+
+    <div class="alltask">
+        <h2 class="tasklist-title">Enter the Information</h2>
+        <ul class="tasklist" id="lists">
+        </ul>
+
+        <form action="/newuser" id="list-form" method="POST">
+            <input name="username" id="list-input" type="text" class="new list" placeholder="username" />
+            <input name="password" id="list-input" type="text" class="new list" placeholder="password" />
+            <button type="submit" class="listbutt">Create Account</button>
+        </form>
+    </div>
+</body>
+
+</html>

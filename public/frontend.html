@@ -14,15 +14,17 @@
         <li class="list-name">School</li>-->
        </ul>
 
-       <form action="" id="list-form">
+       <form action="/lists" id="list-form" method="POST">
         <input
+            name="list-name"
             id="list-input"
             type="text"
             class="new list"
             placeholder="new list name"
             aria-label="new list name"
         />
-        <button 
+        <button
+            type="submit"
             class="listbutt" 
             aria-label="create new list">+</button>
     </form>

@@ -1,5 +1,4 @@
 
-
 //Get html elements
 const listsElement = document.querySelector('#lists');
 const listForm = document.querySelector('#list-form');
@@ -14,6 +13,7 @@ const taskForm = document.querySelector('#task-form');
 const taskInput = document.querySelector('#task-input');
 const deleteTasksBtn = document.querySelector('#delete-tasks-btn')
 
+
 //keys for local storage where we store our lists
 const LIST_KEY = 'todo.lists'; 
 const CURRENT_LIST_ID_KEY = 'task.currentListId';
@@ -22,24 +22,6 @@ const CURRENT_LIST_ID_KEY = 'task.currentListId';
 let lists = JSON.parse(localStorage.getItem(LIST_KEY)) || []; 
 
 let currentListId = localStorage.getItem(CURRENT_LIST_ID_KEY);
-
-var sql = require('mysql');
-
-var config = sql.createPool({
-    host: 'us-cdbr-east-04.cleardb.com',
-    user: 'baeffcfa0361e8',
-    password: 'd75d807f',
-    database: 'heroku_f4a58d3b92ef321'
-});
-
-module.exports = config;
-
-var sql = "select * from task_list";
-config.query(sql, function(err, result) {
-    if (err) throw err;
-    console.log("record retrieved");
-    res.send(result);
-});
 
 //Event Listeners
 
